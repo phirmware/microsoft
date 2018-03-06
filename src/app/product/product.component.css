@@ -1,0 +1,15 @@
+.content {
+    background-color: white;
+    padding: 10px;
+}
+img{
+	height:500px;
+	margin:4px auto;
+}
+input{
+	width:50px;
+}
+.style{
+	font-family: Consolas, monaco, monospace;
+	font-weight:bolder;
+}

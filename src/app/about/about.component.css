@@ -1,0 +1,35 @@
+.first{
+	background:url('https://accountingsoftware.com.ng/wp-content/uploads/2015/11/Accounting-Software-for-Supermarket-Nigeria-Kenya-Ghana-POS.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	height:520px;
+}
+h3{
+	text-align:center;
+	margin:0px;
+}
+.second{
+	background:url('http://monsieurchatte.com/images/delivery.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	height:540px;
+}
+.stress{
+	background:black;
+	color:white;
+	margin-bottom:0px;
+}
+.third{
+	background:url('http://mctrans.ce.ufl.edu/mct/wp-content/uploads/2016/04/products_orderbg-1-1024x768.png');
+	background-size:cover;
+	height:800px;
+}
+.logo{
+	background:lightblue;
+	margin-bottom:0px;
+}
+h2{
+	margin-bottom:0px;
+}
