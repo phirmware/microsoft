@@ -1,13 +1,13 @@
-<div class="container-fluid">
+<div class="container-fluid animated fadeIn">
   <div class="row">
-    <div class="col-6">
+    <div class="col-lg-6 col-sm-12">
       <div class="content">
         <div class="container">
-          <img src="{{imagelink}}" alt="Item" style="width:50%">
+          <img src="{{imagelink}}" alt="Item" style="width:80%">
         </div>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-lg-6 col-sm-12">
       <div class="content">
         <h3><span class="style animated fadeIn">Product</span> : {{name}}</h3>
         <h3><span class="style animated fadeIn">Quantity</span> : <input type="number" value="1" #input (change)="calcPrice(input.value)" (click)="calcPrice(input.value)"></h3>

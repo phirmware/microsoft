@@ -90,3 +90,15 @@ img:hover{
   text-align:center;
   font-size:30px;
 }
+.first{
+  animation-delay:0.5s;
+}
+.second{
+  animation-delay:1s;
+}
+.third{
+  animation-delay:1.5s;
+}
+.fourth{
+  animation-delay:2s;
+}

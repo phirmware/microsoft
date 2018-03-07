@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class CartComponent implements OnInit {
 
      
-   constructor(public product:ProductComponent) {}
+   constructor() {}
 
   ngOnInit() {
   }

@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="jumbotron animated fadeIn">
   <h1> Welcome to Grocery Cloud 2.0</h1>
 </div> 
 
@@ -13,33 +13,33 @@
 
   <!-- The slideshow -->
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active animated fadeIn">
       <h4 class="head">{{data[3].subcategories[0].items[0].name}} </h4>
-      <img src="{{data[3].subcategories[0].items[0].imagelink}} " alt="Los Angeles" width="1100" height="500">
+      <a [routerLink]="['/product',data[3].subcategories[0].items[0].name,data[3].subcategories[0].items[0].price,data[3].subcategories[0].items[0].imagelink,data[3].subcategories[0].items[0].description]"><img src="{{data[3].subcategories[0].items[0].imagelink}}" alt="Los Angeles" width="1100" height="500"></a>
     </div>
     <div class="carousel-item">
       <h4 class="head">{{data[0].subcategories[0].items[0].name}}</h4>
-      <img src="{{data[0].subcategories[0].items[0].imagelink}}" alt="Chicago" width="1100" height="500">
+      <a [routerLink]="['/product',data[0].subcategories[0].items[0].name,data[0].subcategories[0].items[0].price,data[0].subcategories[0].items[0].imagelink,data[0].subcategories[0].items[0].description]"><img src="{{data[0].subcategories[0].items[0].imagelink}}" alt="Chicago" width="1100" height="500"></a>
     </div>
     <div class="carousel-item">
       <h4 class="head">{{data[0].subcategories[0].items[6].name}}</h4>
-      <img src="{{data[0].subcategories[0].items[6].imagelink}}" alt="" width="1100" height="500">
+      <a [routerLink]="['/product',data[0].subcategories[0].items[6].name,data[0].subcategories[0].items[6].price,data[0].subcategories[0].items[6].imagelink,data[0].subcategories[0].items[6].description]"><img src="{{data[0].subcategories[0].items[6].imagelink}}" alt="" width="1100" height="500"></a>
     </div>
     <div class="carousel-item">
       <h4 class="head">{{data[3].subcategories[0].items[1].name}}</h4>
-      <img src="{{data[3].subcategories[0].items[1].imagelink}} " alt="Los Angeles" width="1100" height="500">
+      <a [routerLink]="['/product',data[3].subcategories[0].items[1].name,data[3].subcategories[0].items[1].price,data[3].subcategories[0].items[1].imagelink,data[3].subcategories[0].items[1].description]"><img src="{{data[3].subcategories[0].items[1].imagelink}} " alt="Los Angeles" width="1100" height="500"></a>
     </div>
     <div class="carousel-item">
       <h4 class="head">{{data[3].subcategories[0].items[2].name}}</h4>
-      <img src="{{data[3].subcategories[0].items[2].imagelink}} " alt="Los Angeles" width="1100" height="500">
+      <a [routerLink]="['/product',data[3].subcategories[0].items[2].name,data[3].subcategories[0].items[2].price,data[3].subcategories[0].items[2].imagelink,data[3].subcategories[0].items[2].description]"><img src="{{data[3].subcategories[0].items[2].imagelink}} " alt="Los Angeles" width="1100" height="500"></a>
     </div>
     <div class="carousel-item">
       <h4 class="head">{{data[3].subcategories[0].items[11].name}}</h4>
-      <img src="{{data[3].subcategories[0].items[11].imagelink}} " alt="Los Angeles" width="1100" height="500">
+      <a [routerLink]="['/product',data[3].subcategories[0].items[11].name,data[3].subcategories[0].items[11].price,data[3].subcategories[0].items[11].imagelink,data[3].subcategories[0].items[11].description]"><img src="{{data[3].subcategories[0].items[11].imagelink}} " alt="Los Angeles" width="1100" height="500"></a>
     </div>
     <div class="carousel-item">
       <h4 class="head">{{data[3].subcategories[0].items[14].name}} </h4>
-      <img src="{{data[3].subcategories[0].items[14].imagelink}} " alt="Los Angeles" width="1100" height="500">
+      <a [routerLink]="['/product',data[3].subcategories[0].items[14].name,data[3].subcategories[0].items[14].price,data[3].subcategories[0].items[14].imagelink,data[3].subcategories[0].items[14].description]"><img src="{{data[3].subcategories[0].items[14].imagelink}} " alt="Los Angeles" width="1100" height="500"></a>
     </div>
   </div>
 

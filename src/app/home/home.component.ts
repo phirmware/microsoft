@@ -8,6 +8,7 @@ import { Http } from '@angular/http';
 })
 export class HomeComponent implements OnInit {
      data:any[];
+     
      constructor(private http:Http){
           
      }
@@ -15,6 +16,5 @@ export class HomeComponent implements OnInit {
       	this.http.get('https://webmppcapstone.blob.core.windows.net/data/itemsdata.json').subscribe(response => {
               this.data = response.json();
           })
-      }
-     
+     }
 }
