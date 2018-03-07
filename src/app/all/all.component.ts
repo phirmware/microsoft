@@ -1,5 +1,6 @@
 import { Http } from '@angular/http';
 import { Component, OnInit } from '@angular/core';
+import { ProductComponent } from './../product/product.component';
 
 @Component({
   selector: 'app-all',
@@ -29,6 +30,7 @@ export class AllComponent implements OnInit {
     }
 
   }
-   
-  
+   addToCart(){
+
+   }
 }

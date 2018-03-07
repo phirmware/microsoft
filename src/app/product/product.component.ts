@@ -1,5 +1,6 @@
 import {ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-product',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private http:Http) { }
     name:any;
     price:any;
     imagelink:any;
@@ -29,9 +30,8 @@ export class ProductComponent implements OnInit {
      calcPrice (value) {
      	this.totalAmount = this.price*value 
      }
-     addToStorage(){
-      this.cart.push({name:this.name,price:this.totalAmount});
-      console.log(this.cart);
+     addToCart(){
+       this.cart.push({item:this.name});
+       console.log(this.cart);
      }
-
 }

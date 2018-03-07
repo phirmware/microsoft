@@ -8,14 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-	chosenItem:any
-	cart:ProductComponent;
+
      
-   constructor() {}
+   constructor(public product:ProductComponent) {}
 
   ngOnInit() {
   }
-     showCart(){
-     	console.log();
-     }
+     
 }
