@@ -14,6 +14,7 @@ export class AllComponent implements OnInit {
   title:any;
   dataNum:any;
   getData:any;
+  cart:any=[];
 
   constructor(private http:Http) {
     http.get('https://webmppcapstone.blob.core.windows.net/data/itemsdata.json').subscribe(response => {
@@ -30,7 +31,8 @@ export class AllComponent implements OnInit {
     }
 
   }
-   addToCart(){
-
+   addToCart = (value) => {
+       this.cart.push(value);
+       return this.cart
    }
 }

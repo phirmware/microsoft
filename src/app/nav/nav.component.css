@@ -1,3 +1,6 @@
 .link{
     margin-left:55%;
 }
+.navbar{
+	z-index:10;
+}

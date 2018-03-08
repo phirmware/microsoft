@@ -102,3 +102,37 @@ img:hover{
 .fourth{
   animation-delay:2s;
 }
+.one{
+  background-color:blue;
+  height:30px;
+}
+.two{
+  background-color:red;
+  height:30px;
+}
+.sidenav {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.btn{
+  background:linear-gradient(lightblue,blue,darkblue);
+}
+.btn:active {
+  background:blue;
+}

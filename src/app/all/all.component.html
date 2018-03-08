@@ -1,6 +1,6 @@
 <div class="container-fluid animated fadeIn">
   <div class="row">
-    <div class="col-sm-12  col-lg-3 category bg-info">
+    <div class="col-lg-3 category bg-info">
       <h3>Categories select</h3>
       <div class="dropdown">
         <button type="button" class="btn btn-secondary dropdown-toggle animated fadeIn first" data-toggle="dropdown">
@@ -11,7 +11,7 @@
           <a class="dropdown-item" (click)="getData(0,1)">{{data[0].subcategories[1].name}}</a>
           <a class="dropdown-item" (click)="getData(0,2)">{{data[0].subcategories[2].name}}</a>
           <a class="dropdown-item" (click)="getData(0,3)">{{data[0].subcategories[3].name}}</a>
-        </div> 
+        </div>
       </div>
       <div class="dropdown">
         <button type="button" class="btn btn-secondary dropdown-toggle animated fadeIn second" data-toggle="dropdown">
@@ -48,16 +48,16 @@
     <div class="col-lg-9">
       <h3>Pick a Category from the List</h3>
       <h4 class="title main animated slideIn">{{title}}</h4>
-       <div class="row">
+      <div class="row">
         <div class="column item-container" *ngFor="let items of item">
           <div class="card animated fadeIn">
-           <a [routerLink]="['/product',items.name,items.price,items.imagelink,items.description]"><img src="{{items.imagelink}}" alt="Item" style="width:100%"></a>
+            <a [routerLink]="['/product',items.name,items.price,items.imagelink,items.description]"><img src="{{items.imagelink}}" alt="Item" style="width:100%"></a>
             <div class="container">
               <h2 class="item-name">{{items.name}}</h2>
               <p class="title price">Price: $ {{items.price}}</p>
               <p class="description">{{items.description}}</p>
               <p>
-                <button class="button cart" (click)="addToCart()">Add to Cart</button>
+                <button class="button cart" (click)="addToCart({item:items.name,price:items.price,image:items.imagelink})">Add to Cart</button>
               </p>
             </div>
           </div>

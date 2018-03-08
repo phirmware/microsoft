@@ -1,5 +1,6 @@
 import { ProductComponent } from './../product/product.component';
 import { Component, OnInit } from '@angular/core';
+import { AllComponent } from './../all/all.component';
 
 
 @Component({
@@ -9,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-     
-   constructor() {}
+    cart:any=[]; 
+   constructor() {
 
-  ngOnInit() {
-  }
+   }
+
+  ngOnInit() {}
+     all:AllComponent;
      
+    
+
 }
