@@ -2,6 +2,7 @@
 	text-align:center;
 }
 table{
+    margin:auto 0px;
 	margin-left:0px;
 	border-radius:5px;
 }
@@ -128,4 +129,7 @@ hr {
 }
 td{
     transition:3s;
+}
+table{
+    width:100%;
 }

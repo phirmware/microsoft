@@ -3,7 +3,7 @@
     background: lightblue;
 }
 button{
-    margin-bottom: 35%;
+    margin-bottom: 45%;
 }
 .title{
 	text-decoration:underline;
@@ -16,7 +16,7 @@ button{
 
 .column {
   float: left;
-  width: 33.3%;
+  width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -92,15 +92,19 @@ img:hover{
 }
 .first{
   animation-delay:0.5s;
+  font-size:12px;
 }
 .second{
   animation-delay:1s;
+  font-size:12px;
 }
 .third{
   animation-delay:1.5s;
+  font-size:12px;
 }
 .fourth{
   animation-delay:2s;
+  font-size:12px;
 }
 .one{
   background-color:blue;
@@ -138,4 +142,8 @@ img:hover{
 }
 .point{
   font-size:100px;
+}
+.all{
+  background-color:azure;
+  height:100%;
 }

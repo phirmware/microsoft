@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Globals } from './../global';
 
 @Component({
   selector: 'app-footer',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
+  cart:any = [];
+  constructor(private global:Globals) {
+     this.cart = global.role
+   }
 
   ngOnInit() {
   }

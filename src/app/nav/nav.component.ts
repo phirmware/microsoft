@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Globals } from './../global';
+
 
 @Component({
   selector: 'app-nav',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-
-  constructor() { }
+    cart:any = [];
+  constructor(private global:Globals) { 
+    this.cart = global.role
+  }
 
   ngOnInit() {
   }
+
 
 }

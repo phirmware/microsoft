@@ -1,6 +1,6 @@
-<div class="container-fluid animated fadeIn">
+<div class="container-fluid animated fadeIn all">
   <div class="row">
-    <div class="col-lg-3 category bg-info">
+    <div class="col-lg-2 category bg-info">
       <h3>Categories select</h3>
       <div class="dropdown">
         <button type="button" class="btn btn-secondary dropdown-toggle animated fadeIn first" data-toggle="dropdown">
@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-9">
+    <div class="col-lg-10">
       <h3>Pick a Category from the List <i class="far fa-hand-point-up"></i></h3>
       <i class="far fa-hand-point-left point d-none d-lg-block"></i>
       <h4 class="title main animated slideIn">{{title}}</h4>
@@ -54,7 +54,7 @@
           <div class="card animated fadeIn">
             <a [routerLink]="['/product',items.name,items.price,items.imagelink,items.description]"><img src="{{items.imagelink}}" alt="Item" style="width:100%"></a>
             <div class="container">
-              <h2 class="item-name">{{items.name}}</h2>
+              <h4 class="item-name">{{items.name}}</h4>
               <p class="title price">Price: $ {{items.price}}</p>
               <p class="description">{{items.description}}</p>
               <p>
@@ -66,3 +66,4 @@
       </div>
     </div>
   </div>
+</div>
