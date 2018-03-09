@@ -11,7 +11,7 @@ import { CartComponent } from './cart/cart.component';
 import { AllComponent } from './all/all.component';
 import { AboutComponent } from './about/about.component';
 import { ProductComponent } from './product/product.component';
-
+import { Globals } from './global';
 
 
 @NgModule({
@@ -37,7 +37,9 @@ import { ProductComponent } from './product/product.component';
        {path:'product/:item/:price/:imagelink/:description',component:ProductComponent},
       ])
   ],
-  providers: [],
+  providers: [
+     Globals
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

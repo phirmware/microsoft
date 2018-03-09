@@ -1,6 +1,7 @@
 import {ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
+import { Globals } from './../global';
 
 @Component({
   selector: 'app-product',
@@ -9,7 +10,7 @@ import { Http } from '@angular/http';
 })
 export class ProductComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private http:Http) { }
+  constructor(private route: ActivatedRoute, private http:Http , private global:Globals) { }
     name:any;
     price:any;
     imagelink:any;
@@ -28,10 +29,9 @@ export class ProductComponent implements OnInit {
       });
   }
      calcPrice (value) {
-     	this.totalAmount = this.price*value 
+     	this.totalAmount = (this.price*value).toFixed(2); 
      }
      addToCart(){
-       this.cart.push({item:this.name});
-       console.log(this.cart);
+       this.global.role.push({item:this.name,price:this.totalAmount,image:this.imagelink});
      }
 }

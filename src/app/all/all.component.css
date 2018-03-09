@@ -133,6 +133,6 @@ img:hover{
 .btn{
   background:linear-gradient(lightblue,blue,darkblue);
 }
-.btn:active {
-  background:blue;
+.btn:active{
+  background-color:blue;
 }

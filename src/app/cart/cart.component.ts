@@ -1,6 +1,7 @@
 import { ProductComponent } from './../product/product.component';
 import { Component, OnInit } from '@angular/core';
 import { AllComponent } from './../all/all.component';
+import { Globals } from './../global';
 
 
 @Component({
@@ -9,15 +10,15 @@ import { AllComponent } from './../all/all.component';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-
-    cart:any=[]; 
-   constructor() {
+    cart:any;
+   constructor(private globals:Globals) {
+      this.cart = globals.role
 
    }
 
   ngOnInit() {}
-     all:AllComponent;
-     
-    
 
+  updatePrice(){
+    
+  }
 }
