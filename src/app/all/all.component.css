@@ -136,3 +136,6 @@ img:hover{
 .btn:active{
   background-color:blue;
 }
+.point{
+  font-size:100px;
+}

@@ -120,8 +120,8 @@ hr {
     }
 }
 .remove{
-	background:linear-gradient(red,darkred);
-	width:30px;
+	color:red;
+    cursor:pointer;
 }
 .cancelbtn{
 	background:linear-gradient(red,darkred);
