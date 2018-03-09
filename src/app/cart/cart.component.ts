@@ -19,6 +19,10 @@ export class CartComponent implements OnInit {
   ngOnInit() {}
 
   updatePrice(){
-    
+
+  }
+  deleteItem(post){
+    let index = this.cart.indexOf(post);
+    this.cart.splice(index,1);
   }
 }
