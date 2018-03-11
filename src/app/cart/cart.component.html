@@ -1,77 +1,70 @@
 <div class="jumbotron bg-info">
-		<h2>Your Cart   <i class="fa fa-cart-arrow-down"></i> </h2>
-	</div>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-12">
-			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Purchase and Ship</button>
-
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
-    <div class="container">
-      <h1>Shipping Details</h1>
-      <p>Please Enter Shipping Details.</p>
-      <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-
-      <label for="psw"><b>Adress/City</b></label>
-      <input type="password" placeholder="Enter Address/City" name="psw" required>
-
-      <label for="psw-repeat"><b>Phone Number</b></label>
-      <input type="password" placeholder="Phone Number" name="psw-repeat" required>
-      
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-
-      <p>By Purchasing you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Purchase</button>
-      </div>
-    </div>
-  </form>
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+  <h2>Your Cart   <i class="fa fa-cart-arrow-down"></i></h2></div>
 <div class="container-fluid">
   <div class="row">
     <div class="col-12">
-      <div class="table-responsive">
-			<table class="table table-dark table-striped">
-    <thead>
-      <tr>
-      	<th>Image</th>
-        <th>Item</th>
-        <th>Quantity</th>
-        <th>Price</th>
-        <th>Remove</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let carts of cart">
-      	<td> <img class="img-fluid rounded-circle" src="{{carts.image}}" alt="Chania" width="100" height="100"></td>
-        <td>{{carts.item}}</td>
-        <td><input class="amount" type="number" value="1" (change)="updatePrice(input.value)" (click)="updatePrice(input.value)" #input/></td>
-        <td>$ {{(carts.price*input.value).toFixed(2)}}</td>
-        <td><span (click)="deleteItem(carts)"><i class="fas fa-trash-alt remove"></i></span></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div>
-  </div>
-</div>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Purchase and Ship</button>
+      <div id="id01" class="modal"><span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h1>Shipping Details</h1>
+            <p>Please Enter Shipping Details.</p>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label for="psw"><b>Adress/City</b></label>
+            <input type="password" placeholder="Enter Address/City" name="psw" required>
+            <label for="psw-repeat"><b>Phone Number</b></label>
+            <input type="password" placeholder="Phone Number" name="psw-repeat" required>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me</label>
+            <p>By Purchasing you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Purchase</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+
+      </script>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="table-responsive">
+              <table class="table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Remove</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let carts of cart">
+                    <td> <img class="img-fluid rounded-circle" src="{{carts.image}}" alt="Chania" width="100" height="100"></td>
+                    <td>{{carts.item}}</td>
+                    <td>
+                      <input class="amount" type="number" value="1" (change)="updatePrice(input.value)" (click)="updatePrice(input.value)" #input/>
+                    </td>
+                    <td>$ {{(carts.price*input.value).toFixed(2)}}</td>
+                    <td><span (click)="deleteItem(carts)"><i class="fas fa-trash-alt remove"></i></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>

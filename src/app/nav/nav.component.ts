@@ -8,13 +8,11 @@ import { Globals } from './../global';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-    cart:any = [];
-  constructor(private global:Globals) { 
-    this.cart = global.role
-  }
+    cart = this.global.role;
+    isEmpty:boolean;
+    
+  constructor(private global:Globals) {}
+  
 
-  ngOnInit() {
-  }
-
-
-}
+  ngOnInit() {}
+} 

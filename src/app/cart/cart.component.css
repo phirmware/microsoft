@@ -127,7 +127,7 @@ hr {
 .cancelbtn{
 	background:linear-gradient(red,darkred);
 }
-td{
+tr{
     transition:3s;
 }
 table{
