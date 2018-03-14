@@ -52,11 +52,17 @@
       <div class="row">
         <div class="column item-container" *ngFor="let items of item">
           <div class="card animated fadeIn">
+            <p class="item-name">{{items.name}}</p>
             <a [routerLink]="['/product',items.name,items.price,items.imagelink,items.description]"><img src="{{items.imagelink}}" alt="Item" style="width:100%"></a>
             <div class="container">
-              <h4 class="item-name">{{items.name}}</h4>
+              
               <p class="title price">Price: $ {{items.price}}</p>
-              <p class="description">{{items.description}}</p>
+              <p class="rating">{{items.rating}}</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
               <p>
                 <button class="button cart" (click)="addToCart({item:items.name,price:items.price,image:items.imagelink})">Add to Cart</button>
               </p>

@@ -16,7 +16,8 @@ export class AllComponent implements OnInit {
   dataNum:any;
   getData:any;
   cart:any=[];
-
+  firstRating:boolean;
+  rating:any;
   constructor(private http:Http , private globals:Globals) {
     http.get('https://webmppcapstone.blob.core.windows.net/data/itemsdata.json').subscribe(response => {
       this.data = response.json();
@@ -37,4 +38,7 @@ export class AllComponent implements OnInit {
        this.globals.role.push(value);
        console.log(this.globals.role);
    }
+
+  
+
 }

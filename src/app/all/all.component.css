@@ -81,6 +81,8 @@ img:hover{
 }
 .item-name{
   margin-bottom:0px;
+  font-weight:bolder;
+  text-align:center;
 }
 .price{
   margin-bottom:0px;
@@ -146,4 +148,11 @@ img:hover{
 .all{
   background-color:azure;
   height:100%;
+}
+.list-group{
+  width:50%;
+  margin-left:25%;
+}
+.checked {
+    color: orange;
 }
