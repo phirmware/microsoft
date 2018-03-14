@@ -20,7 +20,9 @@
         <a class="nav-link" routerLink="/about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/cart">Cart <i class="fa fa-cart-arrow-down"></i> <i class="material-icons" [class.empty]="isEmpty">filter_{{cart.length}}</i></a>
+        <a class="nav-link" routerLink="/cart">Cart <i class="fa fa-cart-arrow-down"></i>
+        <span class="badge" [class.empty]="isEmpty">{{cart.length}}</span>
+        </a>
       </li> 
     </ul>
   </div> 
