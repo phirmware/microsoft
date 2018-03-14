@@ -137,7 +137,7 @@ img:hover{
     color: #f1f1f1;
 }
 .btn{
-  background:linear-gradient(lightblue,blue,darkblue);
+  
 }
 .btn:active{
   background-color:blue;
