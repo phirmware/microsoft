@@ -1,6 +1,6 @@
 {
     "name":"my microsoft project",
-    "start_url": "/",
+    "start_url": "https://phirmware.github.io/microsoft/",
     "orientation": "any",
     "scope": "/",
     "display": "standalone"
